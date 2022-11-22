@@ -6,7 +6,6 @@ import (
 
 	"text/template"
 
-	_ "github.com/go-sql-driver/mysql"
 )
 
 var tmp = template.Must(template.ParseGlob("frontend/*"))
