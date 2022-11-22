@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Go Form</title>
+    <style>
+        #container{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    {{.}}
+     <div id="container">
+      <h1>Account Information</h1>
+
+      <form method="POST" action="/register">
+        <label for="id">User Id </label>
+        <input type="text" name="cid" /><br /><br />
+
+        <label for="name">Name </label>
+        <input type="text" name="name" /><br /><br />
+
+        <label for="mobileno">Mobile No </label>
+        <input type="text" name="mobileno" /><br /><br />
+        <label for="gender">Gender </label>
+        <input type="text" name="gender" /><br /><br />
+        <label for="pancard">Pancard </label>
+        <input type="text" name="pancard" /><br /><br />
+        <label for="nationality">Nationality </label>
+        <input type="text" name="nationality" /><br /><br />
+
+        <label for="address">Address </label>
+        <input type="text" name="address" /><br /><br />
+        <label for="id">User Name </label>
+        <input type="text" name="username" /><br /><br />
+
+        <label for="name">Password </label>
+        <input type="text" name="password" /><br /><br />
+
+       
+        <input type="submit" name="submit"  />
+        
+      </form>
+    </div>
+   
+  </body>
+</html>
